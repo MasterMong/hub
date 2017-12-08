@@ -1,0 +1,63 @@
+[
+    {
+    "Name": "ไฟลต่าง ๆ",
+    "Describe": "การแบ่งปันไฟล์ร่วมกัน",
+    "Image": "fm.png",
+    "Link": "/tools/filemanager/"
+    }, {
+    "Name": "AutoDraw",
+    "Describe": "วาดรูป",
+    "Image": "autodraw.png",
+    "Link": "http://www.autodraw.com/"
+    }, {
+    "Name": "เกมส์แก้ปัญหา",
+    "Describe": "เกมส์แก้ปัญหา",
+    "Image": "game.png",
+    "Link": "/game"
+    }, {
+    "Name": "Google",
+    "Describe": "กูเกิล",
+    "Image": "google.png",
+    "Link": "http://google.com/"
+    }, {
+    "Name": "Youtube",
+    "Describe": "ยูทูป",
+    "Image": "youtube.png",
+    "Link": "http://youtube.com/"
+    }, {
+    "Name": "Google Streetview",
+    "Describe": "สำรวจสถานที่ต่าง ๆ ของโลก",
+    "Image": "googleearth.png",
+    "Link": "https://www.google.com/streetview/"
+    }, {
+    "Name": "Zygotebody",
+    "Describe": "สำรวจร่างกายของเรา",
+    "Image": "Zygotebody.png",
+    "Link": "https://zygotebody.com/"
+    }, {
+    "Name": "Play Code Monkey",
+    "Describe": "การเขียนโค้ดสำหรับเด็ก 1",
+    "Image": "banana.png",
+    "Link": "https://www.playcodemonkey.com/challenges/0"
+    }, {
+    "Name": "Rabbit",
+    "Describe": "การเขียนโค้ดสำหรับเด็ก 2",
+    "Image": "rabbit.png",
+    "Link": "https://www.google.com/logos/2017/logo17/logo17.html?hl=th"
+    }, {
+    "Name": "Quizzizz",
+    "Describe": "กิจกรรมตอบคำถาม",
+    "Image": "quizizz.jpg",
+    "Link": "https://quizizz.com/join/"
+    }, {
+    "Name": "Kahoot",
+    "Describe": "กิจกรรมตอบคำถาม",
+    "Image": "kahoot.png",
+    "Link": "https://kahoot.it/"
+    }, {
+    "Name": "การใช้งานเสิร์จเอนจิน",
+    "Describe": "CAI การใช้งานเสิร์จเอนจิน",
+    "Image": "wbi.png",
+    "Link": "/PTM_CAI/"
+    }
+]

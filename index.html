@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang='th'>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/hub/assets/css/newui.css">
+   <link rel="stylesheet" href="/hub/assets/css/bootstrap.min.css">
+   <script src="/hub/assets/js/jquery.min.js" type="text/javascript"></script>
+   <title>Teacher/</title>
+</head>
+<body>
+    <nav id='cssmenu' class="fade-in">
+        <ul>
+            <li class='active'><a href='#'>หน้าหลัก</a></li>
+            <li><a href='#6'>ป.6</a></li>
+            <li><a href='#2'>ป.2</a></li>
+            <li><a href='#Admin'>Admin</a></li>
+        </ul>
+    </nav>
+    <main>
+        <center id="CardList">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>รอแป๊ป
+        </center>
+    </main>
+</body>
+<script>
+    var $cardList = jQuery('#CardList');
+    function loadItem(json){
+        console.log(json);
+        if (!json) {
+            $cardList.html('ว่าง');
+          } else if (jQuery.isEmptyObject(json)) {        
+            $cardList.html('ไม่มีข้อมูล');
+        } else {
+            $cardList.empty();
+            jQuery.each(json, function(index, x){
+                
+                $cardList.append(
+                    "<a class='card' href='"+ x.Link +"' target='blank'>" +
+                        "<img src='/hub/assets/img/teacher/"+ x.Image +"' alt='Avatar' style='width:100%'>" +
+                        "<div>"+
+                            "<h4><b>"+ x.Name +"</b></h4>"+
+                            "<p>"+ x.Describe +"</p>"+
+                        "</div>"+
+                    "</a>"
+                );
+            });
+
+        }
+    }
+
+    jQuery.ajax({
+        'url': "/hub/assets/json/hub-item.json",
+        'dataType': "json"
+    }).done(function(data) {
+        setInterval(function(){ loadItem(data); }, 1500);  
+    }).fail(function() {
+        $cardList.html('โหลดใหม่ ถ้าไม่หายก็แจ้งครู ไม่เจอไฟล์');
+    });
+</script>
+<html>
